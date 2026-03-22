@@ -1,0 +1,13 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc = "0.8.19"
+
+# Gas reporting (moved outside rpc_endpoints)
+gas_reports = ["Web3CXIVToken"]
+
+# RPC endpoints (only for connection URLs)
+[rpc_endpoints]
+sepolia = "${SEPOLIA_RPC_URL}"
+localhost = "http://localhost:8545"
